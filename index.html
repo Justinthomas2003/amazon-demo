@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Amazon Demo Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <div id="products" class="products">
+        <div class="product">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h2>Laptop</h2>
+            <p>₹60,000</p>
+            <button onclick="addToCart('Laptop', 60000)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/phone.jpg" alt="Phone">
+            <h2>Phone</h2>
+            <p>₹30,000</p>
+            <button onclick="addToCart('Phone', 30000)">Add to Cart</button>
+        </div>
+    </div>
+
+    <a href="cart.html">Go to Cart</a>
+</body>
+</html>

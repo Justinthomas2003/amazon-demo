@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Amazon Demo</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-detail">
+      <img id="product-image" src="images/product1.jpg" alt="Product Image">
+      <div class="product-info">
+        <h2 id="product-name">Sample Product</h2>
+        <p id="product-description">
+          This is a detailed description of the product. You can write features,
+          highlights, and specifications here.
+        </p>
+        <h3>Price: ₹<span id="product-price">999</span></h3>
+        <button onclick="addToCartFromProduct()">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="product.js"></script>
+</body>
+</html>
