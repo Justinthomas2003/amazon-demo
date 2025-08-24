@@ -29,7 +29,7 @@ function showCart() {
     }
 
     // Update total
-    let totalElement = document.getElementById("total");
+    let totalElement = document.getElementById("total") || document.getElementById("total-amount");
     if (totalElement) {
         totalElement.innerText = "Total: ₹" + total;
     }
